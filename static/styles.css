@@ -1,0 +1,144 @@
+body{
+    background-image: url('homepage_bg.jpg');
+    background-size: 100% auto;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #333;
+  padding: 0 12px;
+  height: 64px;
+  position: relative;
+  border-radius: 20px;
+  width: 400px;
+  margin: auto;
+}
+
+.topnav .top-row {
+  display: flex;
+  align-items: center;
+}
+
+.topnav a.active {
+  color: white;
+  padding: 6px 14px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.topnav .menu-links {
+  display: flex;
+  flex: 1;
+  max-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+  transition: max-height 0.5s ease-out;
+  text-align: center;
+  width: 100%;
+}
+
+.topnav.responsive .menu-links {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+
+.topnav .menu-links a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 0 12px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  border-radius: 10px;
+}
+
+.topnav .menu-links a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 12px;
+}
+
+
+.menu-links{
+    border-radius: 10px;
+}
+
+.topnav .icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: max-content;
+  }
+
+  .topnav.topnav.responsive{
+    width: 200px;
+  }
+
+  .topnav .top-row {
+    align-items: center;
+    display: flex;
+  }
+
+
+  .topnav .icon {
+    display: block;
+    margin-right: 10px;
+    text-decoration: none; 
+  }
+
+  .topnav .menu-links {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    justify-content: space-between;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .topnav.responsive .menu-links {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .topnav.responsive .icon {
+    transform: rotate(90deg);
+  }
+
+  .topnav .menu-links a {
+    padding: 10px 16px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .topnav .menu-links {
+    flex: 1;
+    flex-direction: row;
+    max-height: none;
+    overflow: visible;
+    justify-content: space-evenly;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+}
