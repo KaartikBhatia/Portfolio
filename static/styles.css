@@ -16,13 +16,7 @@ body{
 
 .topnav, .herotext, .herosubtext {
   opacity: 0;
-  transform: translateY(50px);
-
-  @supports (animation-timeline: scroll()) {
-    @media (prefers-reduced-motion: no-preference){
-      
-    }
-  }
+  transform: translateY(30px);
 }
 
 .topnav {
@@ -390,5 +384,27 @@ body{
 
   .topnav .icon {
     display: none;
+  }
+}
+
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .topnav, .herotext, .herosubtext {
+      animation: reveal-content linear both;
+      animation-timeline: scroll(root);
+      animation-range: 80% 90%;
+    }
+
+    @keyframes reveal-content {
+      from {
+        opacity:0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
 }
