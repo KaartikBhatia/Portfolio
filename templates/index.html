@@ -14,18 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cal+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="topnav" id="myTopnav">
-            <div class="top-row">
-                <a class="icon" onclick="toggleMenu()">☰</a>
-            </div>
-            <div class="menu-links">
-                <a href="#news">Home</a>
-                <a href="#contact">About</a>
-                <a href="#abt">Achievements</a>
-                <a href="#recordsheet">Education</a>
-                <a href="#recordsheet">Contact</a>
-            </div>
-        </div>
+        <div class = "bg"></div>
         <div class="stuck-grid">
             <div class="grid-item">HackGwinnet IV</div>
             <div class="grid-item">Electronics</div>
@@ -43,8 +32,24 @@
             <div class="grid-item">HackCreate</div>
             <div class="grid-item">Soccer</div>
         </div>
-        <h1 class="herotext">Welcome</h1>
-        <h2 class="herosubtext">Made by Kaartik Bhatia</h2>
+        <div class = "overlay">
+            <div class="topnav" id="myTopnav">
+                <div class="top-row">
+                    <a class="icon" onclick="toggleMenu()">☰</a>
+                </div>
+                <div class="menu-links">
+                    <a href="#news">Home</a>
+                    <a href="#contact">About</a>
+                    <a href="#abt">Achievements</a>
+                    <a href="#recordsheet">Education</a>
+                    <a href="#recordsheet">Contact</a>
+                </div>
+            </div>
+            <div class = "hero">
+                <h1 class="herotext">Welcome</h1>
+                <h2 class="herosubtext">Made by Kaartik Bhatia</h2>
+            </div>
+        </div>
         <script>
             function toggleMenu() {
                 var x = document.getElementById("myTopnav");
