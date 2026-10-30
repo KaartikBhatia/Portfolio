@@ -185,7 +185,6 @@ body {
 
 .herotext, .herosubtext {
     font-size: 50px;
-    padding-top: 100px;
     text-align: center;
     color: whitesmoke;
 }
@@ -320,6 +319,10 @@ body {
   .topnav .icon {
     display: none;
   }
+}
+
+.no_page_change {
+  cursor: pointer;
 }
 
 @supports (animation-timeline: scroll()) {

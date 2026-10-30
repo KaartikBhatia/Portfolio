@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0" />
+        <title>Kaartik Bhatia</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='other_styles.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cal+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "bg"></div>
+        <div class = "overlay">
+            <div class="topnav" id="myTopnav">
+                <div class="top-row">
+                    <a class="icon" onclick="toggleMenu()">☰</a>
+                </div>
+                <div class="menu-links">
+                    <a href = "{{ url_for('home_page') }}">Home</a>
+                    <a href="{{ url_for('about_me') }}">About</a>
+                    <a class="no_page_change">Achievements</a>
+                    <a href="#recordsheet">Education</a>
+                    <a href="#recordsheet">Contact</a>
+                </div>
+            </div>
+            <div class = "hero">
+                <h1 class="herotext">Hello!</h1>
+                <br>
+                <h2 class="herosubtext">I'm Kaartik, a Junior at Sycamore High School in Cincinnati, Ohio.</h2>
+                <br>
+                <h2 class = "herosubtext"> About me: <br> I moved to the United States in April 2022 from India. <br> Being born and raised there really changed how I viewed the US. When I first moved here, I lived in Atlanta, GA. <br> I spent about 4 years there, before moving to Cincinnati about a year ago. <br> Some of my favourite activities are vibecoding, playing videogames, and cooking! (And trust me, I know how to cook, just look at this website!)<br></h2>
+                <br>
+                <br>
+            </div>
+        </div>
+        <script>
+            function toggleMenu() {
+                var x = document.getElementById("myTopnav");
+                if (x.className == "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav"
+                }
+            }
+        </script>
+    </body>
+</html>

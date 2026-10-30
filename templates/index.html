@@ -4,7 +4,6 @@
         <meta charset = "UTF-8" />
         <meta name = "viewport" content = "width=device-width, initial-scale = 1.0" />
         <title>Kaartik Bhatia</title>
-        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,16 +37,20 @@
                     <a class="icon" onclick="toggleMenu()">☰</a>
                 </div>
                 <div class="menu-links">
-                    <a href="#news">Home</a>
-                    <a href="#contact">About</a>
-                    <a href="#abt">Achievements</a>
+                    <a class = "no_page_change">Home</a>
+                    <a href="{{ url_for('about_me') }}">About</a>
+                    <a href="{{ url_for('achievements') }}">Achievements</a>
                     <a href="#recordsheet">Education</a>
                     <a href="#recordsheet">Contact</a>
                 </div>
             </div>
             <div class = "hero">
                 <h1 class="herotext">Welcome</h1>
-                <h2 class="herosubtext">Made by Kaartik Bhatia</h2>
+                <br>
+                <h2 class="herosubtext">Designed by Kaartik Bhatia</h2>
+                <h2 class = "herosubtext">Feel Free to Explore!</h2>
+                <br>
+                <br>
             </div>
         </div>
         <script>
