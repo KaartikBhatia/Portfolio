@@ -18,6 +18,9 @@ def achievements():
 def education():
     return render_template('education.html')
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__ == '__main__':
     app.run(debug=False)

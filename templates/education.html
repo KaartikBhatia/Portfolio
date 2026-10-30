@@ -22,13 +22,21 @@
                 <div class="menu-links">
                     <a href = "{{ url_for('home_page') }}">Home</a>
                     <a href="{{ url_for('about_me') }}">About</a>
-                    <a = href="{{ url_for('achievements') }}">Achievements</a>
+                    <a href="{{ url_for('achievements') }}">Achievements</a>
                     <a class="no_page_change">Education</a>
-                    <a href="#recordsheet">Contact</a>
+                    <a href="{{ url_for('contact') }}">Contact</a>
                 </div>
             </div>
             <div class = "hero">
-                
+                <div class = square>
+                    <h1 style = "text-align: center !important; font-size: 50px !important;">Education</h1>
+                    <ul>
+                        <li><h2>2022-2024:</h2><p>Sandy Springs Charter Middle School - Atlanta, GA</p></li>
+                        <li><h2>2024-2025:</h2><p>FCS Innovation Academy - Atlanta, GA</p></li>
+                        <li><h2>2025-2028:</h2><p>Sycamore High School - Cincinnati, OH</p></li>
+                        <li><h2>2028-2032:</h2><p>College - Undecided</p></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <script>
