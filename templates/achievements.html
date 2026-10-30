@@ -23,18 +23,20 @@
                     <a href = "{{ url_for('home_page') }}">Home</a>
                     <a href="{{ url_for('about_me') }}">About</a>
                     <a class="no_page_change">Achievements</a>
-                    <a href="#recordsheet">Education</a>
+                    <a href="{{ url_for('education') }}">Education</a>
                     <a href="#recordsheet">Contact</a>
                 </div>
             </div>
             <div class = "hero">
-                <h1 class="herotext">Hello!</h1>
-                <br>
-                <h2 class="herosubtext">I'm Kaartik, a Junior at Sycamore High School in Cincinnati, Ohio.</h2>
-                <br>
-                <h2 class = "herosubtext"> About me: <br> I moved to the United States in April 2022 from India. <br> Being born and raised there really changed how I viewed the US. When I first moved here, I lived in Atlanta, GA. <br> I spent about 4 years there, before moving to Cincinnati about a year ago. <br> Some of my favourite activities are vibecoding, playing videogames, and cooking! (And trust me, I know how to cook, just look at this website!)<br></h2>
-                <br>
-                <br>
+                <h1 class = "herotext">My Achievements</h1>
+                <h2 class = "herosubtext" style = "font-size: 50px;">Recognitions:</h2>
+                <div class = "square">
+                    <ul>
+                        <li><p>HackCreate IV - A post Hackathon competition for HackGwinnet IV. Participants were tasked with designing a project with the theme of Fintech. I created Investify, an all in one investing solution for small business owners and private investors. I earned the top spot, which came with bragging rights, and a Nintendo Switch valued at ~$250.</p></li>
+                        <li><p>AP With WE Service - I designed a Minisite that connected to Investify, and detailed my entire process of creating it, from brainstorming to producing it.</p></li>
+                        <li><p>AP Computer Science Principles - Demonstrated exceptional skill at solving problems via the use of CS skills. Earned a 4/5 on the exam.</p></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <script>

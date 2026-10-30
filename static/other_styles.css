@@ -64,6 +64,27 @@ body {
   font-size: 30px !important;
 }
 
+.square{
+  height: auto;
+  width: 1000px;
+  word-wrap:break-word;
+  border-radius: 20px;
+  background-color:#333;
+  border: 5px solid whitesmoke;
+  box-shadow: 10px 10px 10px whitesmoke;
+}
+
+
+ul {
+  line-height: 300%;
+}
+
+p {
+  font-size: 20px !important;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .stuck-grid {
   block-size: 100svh;
   perspective: 1000px;
