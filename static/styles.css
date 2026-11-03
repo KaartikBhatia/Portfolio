@@ -36,8 +36,9 @@ body {
   height: 64px;
   position: relative;
   border-radius: 20px;
-  width: 500px;
+  width: 800px;
   margin: auto;
+  border: 1px solid white;
 }
 
 .overlay {
