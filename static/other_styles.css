@@ -51,6 +51,12 @@ body {
   justify-content: center;
 }
 
+.hero1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .herotext, .herosubtext, .spotify {
   padding-top: 0;
 }
@@ -73,13 +79,41 @@ body {
   background-color:#333;
   border: 5px solid whitesmoke;
   box-shadow: 10px 10px 10px whitesmoke;
+  
 }
 
-.project{
-  height: 100px;
-  width: 100px;
-  border: 1px solid white;
-  cursor: pointer;
+.project1, .project2{
+  border-radius: 10px;
+  border: 5px solid white;
+  height: 200px;
+  width: 400x;
+  position: absolute !important;
+  transition: transform 0.3s ease;
+}
+.project1{
+  margin-top: 300px;
+  margin-left: 350px;
+}
+
+.project2{
+  margin-top: 300px;
+  margin-left: 800px;
+}
+
+.project-name {
+  position: absolute !important;
+  margin-top: 515px;
+  margin-left: 475px;
+}
+
+.project-name2{
+  position: absolute !important;
+  margin-top: 515px;
+  margin-left: 835px; 
+}
+
+.project1:hover, .project2:hover {
+  transform: scale(1.05);
 }
 
 ul {
