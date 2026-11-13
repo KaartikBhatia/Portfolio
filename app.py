@@ -26,5 +26,9 @@ def contact():
 def projects():
     return render_template('projects.html')
 
+@app.route('/maker')
+def maker():
+    return render_template('maker.html')
+
 if __name__ == '__main__':
     app.run(debug=False)

@@ -57,7 +57,7 @@ body {
   flex-direction: column;
 }
 
-.herotext, .herosubtext, .spotify {
+.herotext, .herosubtext {
   padding-top: 0;
 }
 
@@ -79,7 +79,7 @@ body {
   background-color:#333;
   border: 5px solid whitesmoke;
   box-shadow: 10px 10px 10px whitesmoke;
-  
+
 }
 
 .project1, .project2{
@@ -220,7 +220,7 @@ p {
   }
 }
 
-.herotext, .herosubtext, .spotify {
+.herotext, .herosubtext {
     font-size: 50px;
     text-align: center;
     color: whitesmoke;
@@ -358,13 +358,6 @@ p {
     display: none;
   }
 }
-
-.spotify {
-  height: auto;
-  width: auto;
-  z-index: 9999999;
-}
-
 
 .no_page_change {
   cursor: pointer;
