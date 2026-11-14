@@ -71,22 +71,23 @@ body {
   word-wrap: break-word;
   color: black;
   width: 500px;
+  height: 250px;
 }
 
 .maker_projects {
   padding-top: 100px;
 }
 
-.maker_container {
-  justify-content: space-around;
-}
-
 .maker1 {
-  float: left;
+  position: absolute;
+  top: 400px;
+  right: 900px;
 }
 
 .maker2 {
-  float: right;
+  position: absolute;
+  top: 400px;
+  left: 900px;
 }
 
 .herotext {
