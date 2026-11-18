@@ -30,5 +30,9 @@ def projects():
 def maker():
     return render_template('maker.html')
 
+@app.route('/ee_page')
+def ee_page():
+    return render_template('ee_page.html')
+
 if __name__ == '__main__':
     app.run(debug=False)

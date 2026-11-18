@@ -212,6 +212,15 @@ body {
   cursor: pointer;
 }
 
+.easteregg {
+  background-color: inherit;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none
+}
+
 .topnav .menu-links {
   display: flex;
   flex: 1;
