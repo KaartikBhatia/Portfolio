@@ -19,6 +19,7 @@
                 <div class="top-row">
                     <a class="icon" onclick="toggleMenu()">☰</a>
                 </div>
+
                 <div class="menu-links">
                     <a href = "{{ url_for('home_page') }}">Home</a>
                     <a href="{{ url_for('about_me') }}">About</a>
@@ -29,13 +30,14 @@
                     <a href="{{ url_for('maker') }}">Maker</a>
                 </div>
             </div>
-            <div class="square">
-                    <h1>This is the secret easter egg page! CONGRATS YOU FOUND IT! YAY!</h1>
-                    <h1>This is a little game I made at Hack Club Haven! Its a cool platformer, kind of like a roblox obby, but made using unity!</h1>
-                    <h1>Heres the github repo: <a href = "https://github.com/KaartikBhatia/RageBaitGame">RageBait Game</a>Pls check it out!</h1>
-                    <h1>Controls: WASD + shift to sprint and space to jump.</h1>
-            </div>
-            <iframe src = "https://kaartikbhatia.itch.io/ragebaitgame"/>
+            <hr>
+                <div class="square" style = "font-size: 10px !important;">
+                        <h1 class = "ee_text">This is the secret easter egg page! CONGRATS YOU FOUND IT!</h1>
+                        <h1 class = "ee_text">This is a little game I made at Hack Club Haven! Its a cool platformer and parkour style game, but made using unity!</h1>
+                        <h1 class = "ee_text">Heres the github repo: <a style = "color: whitesmoke !important;" href = "https://github.com/KaartikBhatia/RageBaitGame/tree/main" target = "_blank">Ragebait Game: GitHub</a> , Pls check it out!</h1>
+                        <h1 class = "ee_text">Controls: WASD + shift to sprint and space to jump.</h1>
+                </div>
+                <iframe src="https://itch.io/embed-upload/20563939?color=333333" allowfullscreen="" width="980" height="640" style="margin: 100px 0px 0px 0px; border: 10px solid #333; border-radius: 10px;"><a href="https://kaartikbhatia.itch.io/ragebaitgame"></a></iframe>
         </div>
         <script>
             function toggleMenu() {

@@ -29,14 +29,13 @@ body {
 }
 
 .overlay {
-  position: fixed;
+  position: relative;
   inset: 0;
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
-  pointer-events: none;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .overlay .topnav {
@@ -108,8 +107,20 @@ body {
   background-color:#333;
   border: 5px solid whitesmoke;
   box-shadow: 10px 10px 10px whitesmoke;
-
+  margin-bottom: 10px;
 }
+
+.ee_text {
+  margin: 10px 10px 10px 10px;
+}
+
+
+hr {
+  height: 150px;
+  background-color: transparent;
+  border: none;
+}
+
 
 .project1, .project2{
   border-radius: 10px;
