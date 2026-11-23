@@ -1,5 +1,5 @@
 # Kaartik Bhatia's Personal Portfolio website
-This is a personal portfolio website made using Flask, HTML, CSS, and Python. It is to showcase my programming and educational achievemnts, skills, and recognizations.
+This is a personal portfolio website made using Flask, HTML, CSS, and Python. It is to showcase my programming and educational achievemnts, skills, and recognizations. Some of the sections include Maker, Projects, Education, and more. The site also has a couple of cool features like a hidden Easter egg page and a linked 3D game I developed to play inside of the website!
 
 # Live demo
 Live demo at https://portfolio-btz4-five.vercel.app/
